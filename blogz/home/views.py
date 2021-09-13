@@ -2,6 +2,9 @@ from django.shortcuts import render
 
 # Create your views here.
 
+from .form import *
+
+
 
 def home(request):
    
@@ -13,6 +16,13 @@ def home(request):
 def login_view(request):
 
     return render(request , 'login.html')
+
+
+def add_blog(request):
+    context = {'form' : BlogForm}
+
+    return render(request , 'add_blog.html')
+
 
 
 def register_view(request):

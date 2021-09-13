@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block start %}
+
+
+
+<div class="container">
+
+    <form method="post">
+
+        <div class="row">
+
+            <div class="col-d-12">
+                <label> Enter Blog Title  </label>
+                <input type="text" class="form-control" placeholder="Enter Title" name="Title">
+
+            </div>
+
+            <div class="col-md-12">
+                  {{form.media}}
+                  {{form.as_p}}
+            </div>
+        </div>
+    </form>
+</div>
+
+
+{% endblock %}
